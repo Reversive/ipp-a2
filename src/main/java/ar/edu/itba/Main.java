@@ -11,10 +11,10 @@ public class Main {
         ForkMeasurement forkMeasurement = new ForkMeasurement(100, threads, thresholds);
         forkMeasurement.measure();
 
-        ParallelMeasurement parallelMeasurement = new ParallelMeasurement(100, threads);
-        parallelMeasurement.measure();
-
-        SequentialMeasurement sequentialMeasurement = new SequentialMeasurement(100);
-        sequentialMeasurement.measure();
+//        ParallelMeasurement parallelMeasurement = new ParallelMeasurement(100, threads);
+//        parallelMeasurement.measure();
+//
+//        SequentialMeasurement sequentialMeasurement = new SequentialMeasurement(100);
+//        sequentialMeasurement.measure();
     }
 }

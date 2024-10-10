@@ -21,7 +21,7 @@ public class ForkMeasurement implements IMeasure {
                 long totalTime = 0;
                 for (int i = 0; i < iterations; i++) {
                     long startTime = System.nanoTime();
-                    Matrix matrix = new ForkMatrixMultiplication(thread);
+                    Matrix matrix = new ForkMatrixMultiplication(thread, threshold);
                     matrix.execute();
                     long endTime = System.nanoTime();
                     totalTime += endTime - startTime;
